@@ -1,0 +1,2 @@
+/home/voduy/Workspace/Linux_Kernel_Programming/lesson1_character_device_driver/01_init_exit/init_exit.o
+

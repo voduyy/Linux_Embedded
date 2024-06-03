@@ -1,0 +1,1 @@
+cmd_/home/voduy/Workspace/Linux_Kernel_Programming/lesson1_character_device_driver/03_chr_devicefile/chr_devicefile.mod := { echo  /home/voduy/Workspace/Linux_Kernel_Programming/lesson1_character_device_driver/03_chr_devicefile/chr_devicefile.o;  echo; } > /home/voduy/Workspace/Linux_Kernel_Programming/lesson1_character_device_driver/03_chr_devicefile/chr_devicefile.mod
