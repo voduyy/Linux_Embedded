@@ -1,0 +1,1 @@
+cmd_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/test_gpio/gpio.mod := { echo  /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/test_gpio/gpio.o;  echo; } > /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/test_gpio/gpio.mod

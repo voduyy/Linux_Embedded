@@ -14,12 +14,11 @@ static int __init gpio_init(void)
     gpio2_base_addr = ioremap(GPIO_START_ADDR, GPIO_SIZE);
     if (!gpio2_base_addr)
     {
-        
+
         pr_err("Failed to map GPIO memory\n");
 
         return -ENOMEM;
     }
-    pr_info("Mapped GPIO memory at address: %p\n", gpio2_base_addr);
 
     *(gpio2_base_addr + (GPIO_OE_OFFSET / 4)) &= ~GPIO2_0;
     *(gpio2_base_addr + (GPIO_SETDATAOUT_OFFSET / 4)) |= GPIO2_0;
