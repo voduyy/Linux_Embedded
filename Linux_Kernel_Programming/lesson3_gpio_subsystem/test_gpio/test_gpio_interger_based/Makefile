@@ -1,6 +1,5 @@
-# Gpio Sub-System
 BBB_KERNEL := /home/voduy/Workspace/beagleboneblack/kernelbuildscripts/KERNEL
-TOOLCHAIN := /home/voduy//Workspace/beagleboneblack/kernelbuildscripts/dl/gcc-8.5.0-nolibc/arm-linux-gnueabi/bin/arm-linux-gnueabi-
+TOOLCHAIN := /home/voduy/Workspace/beagleboneblack/kernelbuildscripts/dl/gcc-8.5.0-nolibc/arm-linux-gnueabi/bin/arm-linux-gnueabi-
 
 EXTRA_CFLAGS=-Wall
 obj-m := gpio.o

@@ -1,0 +1,2 @@
+/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/test_gpio/test_gpio_descriptor_based/gpio.o
+

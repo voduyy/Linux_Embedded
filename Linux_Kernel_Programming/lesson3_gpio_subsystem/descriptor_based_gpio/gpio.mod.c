@@ -25,13 +25,15 @@ MODULE_INFO(retpoline, "Y");
 static const struct modversion_info ____versions[]
 __used __section(__versions) = {
 	{ 0x6fbd61d8, "module_layout" },
-	{ 0xedc03953, "iounmap" },
+	{ 0x8e061c72, "platform_driver_unregister" },
+	{ 0x42899e9a, "__platform_driver_register" },
+	{ 0x489a34cb, "gpiod_get" },
 	{ 0xc5850110, "printk" },
-	{ 0xe97c4103, "ioremap" },
+	{ 0x1a83fde1, "gpiod_set_value" },
 	{ 0xb1ad28e0, "__gnu_mcount_nc" },
 };
 
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "20C267DF650416C6CC14B05");
+MODULE_INFO(srcversion, "3C03CBCD4B5FB7D903C2C49");
