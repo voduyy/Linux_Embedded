@@ -1,0 +1,20 @@
+/{
+	my_gpio{
+		compatible = "gpio_based_subsystem";
+		led30-gpios = <&gpio0 30 GPIO_ACTIVE_HIGH>;
+		status = "okay";
+	};
+};
+
+/{
+	led:my_new_led{
+		compatible = "gpio_new_based";
+		myled-gpios = <&gpio1 12 GPIO_ACTIVE_LOW>; 
+		status = "okay";
+	};
+};
+
+/*
+    GPIO_ACTIVE_HIGH: Co tin hieu 1 thi se bat
+    GPIO_ACTIVE_LOW: Co tin hieu 0 thi se bat 
+    */
