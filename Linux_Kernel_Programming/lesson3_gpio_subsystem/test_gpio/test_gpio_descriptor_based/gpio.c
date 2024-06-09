@@ -8,8 +8,8 @@
 #define DRIVER_DESCRIPTION "gpio_descriptor"
 #define DRIVER_VERSION "1.0"
 
-#define LOW 0
-#define HIGH 1
+#define LOW 1
+#define HIGH 0
 struct gpio_desc *my_gpio;
 static const struct of_device_id gpiod_id[] = {
     {
@@ -17,18 +17,20 @@ static const struct of_device_id gpiod_id[] = {
     },
     {/*sentinal*/},
 };
+MODULE_DEVICE_TABLE(of, gpiod_id);
+
 static int my_probe(struct platform_device *pdev)
 {
     struct device *dev = &pdev->dev;
-    my_gpio = gpiod_get(dev, "my_led", GPIOD_OUT_LOW);
+    my_gpio = gpiod_get(dev, "myled", GPIOD_OUT_LOW);
     gpiod_set_value(my_gpio, HIGH);
-    pr_info("State of LED %s", gpiod_get_value(my_gpio) ? "high" : "low");
+    pr_info("State of LED %s\n", gpiod_get_value(my_gpio) ? "high" : "low");
     return 0;
 }
 static int my_remove(struct platform_device *pdev)
 {
     gpiod_set_value(my_gpio, LOW);
-    pr_info("State of LED %s", gpiod_get_value(my_gpio) ? "high" : "low");
+    pr_info("State of LED %s\n", gpiod_get_value(my_gpio) ? "high" : "low");
     gpiod_put(my_gpio);
     return 0;
 }
@@ -37,7 +39,7 @@ static struct platform_driver my_drv = {
     .remove = my_remove,
     .driver = {
         .name = "my_driver_gpio",
-        .of_match_table = of_match_ptr(gpiod_id),
+        .of_match_table = gpiod_id,
         .owner = THIS_MODULE},
 };
 module_platform_driver(my_drv);

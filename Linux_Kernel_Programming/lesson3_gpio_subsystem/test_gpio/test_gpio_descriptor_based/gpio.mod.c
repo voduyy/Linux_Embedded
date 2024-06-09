@@ -37,5 +37,7 @@ __used __section(__versions) = {
 
 MODULE_INFO(depends, "");
 
+MODULE_ALIAS("of:N*T*Cgpio_new_based");
+MODULE_ALIAS("of:N*T*Cgpio_new_basedC*");
 
-MODULE_INFO(srcversion, "35B833260402265C9884E6A");
+MODULE_INFO(srcversion, "67EC94FE27436C25BB8393A");

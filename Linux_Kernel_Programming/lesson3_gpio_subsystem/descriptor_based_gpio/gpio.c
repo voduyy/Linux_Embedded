@@ -6,8 +6,8 @@
 #define DRIVER_AUTHOR "Vo Duy"
 #define DRIVER_DESC "gpio subsystem"
 
-#define LOW 0
-#define HIGH 1
+#define LOW 1
+#define HIGH 0
 struct gpio_desc *gpiod;
 static const struct of_device_id gpio_id[] =
     {
@@ -20,7 +20,7 @@ static const struct of_device_id gpio_id[] =
 static int my_probe(struct platform_device *pdev)
 {
     struct device *my_dev = &pdev->dev;
-    gpiod = gpiod_get(my_dev, "led30", GPIOD_OUT_LOW);
+    gpiod = gpiod_get(my_dev, "led30", GPIOD_OUT_HIGH);
     gpiod_set_value(gpiod, HIGH);
     pr_info("%s - %d", __func__, __LINE__);
     return 0;
