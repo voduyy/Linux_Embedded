@@ -6,6 +6,8 @@
 #include <linux/fs.h>
 #include <linux/uaccess.h>
 #include <linux/slab.h>
+#include <linux/err.h>
+
 #define DRIVER_AUTHOR "VoDuy"
 #define DRIVER_DESC "Hello kernel file operations"
 #define DRIVER_VERS "1.0"
@@ -107,12 +109,12 @@ static int __init chrdev_init(void)
     }
 
     pr_info("Create device_number successfully, major = %d, minor = %d\n", MAJOR(my_dev.dev_num), MINOR(my_dev.dev_num));
-    if ((my_dev.my_class = class_create(THIS_MODULE, "my_new_class")) == NULL)
+    if (IS_ERR(my_dev.my_class = class_create(THIS_MODULE, "my_new_class")))
     {
         pr_info("Can't create class \n");
         goto rm_dev_num;
     }
-    if ((device_create(my_dev.my_class, NULL, my_dev.dev_num, NULL, "my_device")) == NULL)
+    if (IS_ERR(device_create(my_dev.my_class, NULL, my_dev.dev_num, NULL, "my_device")))
     {
         pr_info("Can't create device file\n");
         goto rm_class;
