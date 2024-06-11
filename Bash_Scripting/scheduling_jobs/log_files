@@ -1,0 +1,20 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  default-mta | mail-transport-agent
+The following NEW packages will be installed:
+  at
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 38.7 kB of archives.
+After this operation, 163 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 at amd64 3.1.23-1ubuntu1 [38.7 kB]
+Fetched 38.7 kB in 1s (33.7 kB/s)
+Selecting previously unselected package at.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 203211 files and directories currently installed.)
+Preparing to unpack .../at_3.1.23-1ubuntu1_amd64.deb ...
+Unpacking at (3.1.23-1ubuntu1) ...
+Setting up at (3.1.23-1ubuntu1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/atd.service → /lib/systemd/system/atd.service.
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for systemd (245.4-4ubuntu3.23) ...

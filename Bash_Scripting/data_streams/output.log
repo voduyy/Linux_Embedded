@@ -1,0 +1,106 @@
+
+===================================================
+Ubuntu, Started at: Mon 10 Jun 2024 08:19:55 PM PDT
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Ubuntu, Finished at: Mon 10 Jun 2024 08:19:58 PM PDT
+===================================================
+===================================================
+Ubuntu, Started at: Mon 10 Jun 2024 08:21:19 PM PDT
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Ubuntu, Finished at: Mon 10 Jun 2024 08:21:22 PM PDT
+===================================================
+===================================================
+Ubuntu, Started at: Mon 10 Jun 2024 08:22:49 PM PDT
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Ubuntu, Finished at: Mon 10 Jun 2024 08:22:53 PM PDT
+===================================================
+===================================================
+Ubuntu, Started at: Mon 10 Jun 2024 08:23:21 PM PDT
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Ubuntu, Finished at: Mon 10 Jun 2024 08:23:24 PM PDT
+===================================================
+===================================================
+Ubuntu, Started at: Mon 10 Jun 2024 08:24:43 PM PDT
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Ubuntu, Finished at: Mon 10 Jun 2024 08:24:46 PM PDT
+===================================================
+Hit:1 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Hit:1 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Hit:1 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Started at: Mon 10 Jun 2024 08:31:29 PM PDT
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Finished at: Mon 10 Jun 2024 08:31:32 PM PDT
+Started at: Mon 10 Jun 2024 10:00:20 PM PDT
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Fetched 128 kB in 7s (17.8 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Finished at: Mon 10 Jun 2024 10:00:32 PM PDT

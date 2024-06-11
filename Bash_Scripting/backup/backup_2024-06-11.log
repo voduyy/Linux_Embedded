@@ -1,0 +1,33 @@
+sending incremental file list
+./
+Makefile
+client.rb
+clients.bash
+lib/
+lib/queue_socket.h
+lib/socketutil.h
+obj/
+obj/client
+obj/server
+src/
+src/socket_client.c
+src/socket_server.c
+test_folder/
+test_folder/test
+test_folder/test.c
+text/
+text/1.c
+text/2.c
+text/3.c
+text/4.c
+text/5.c
+text/6.c
+
+sent 51,178 bytes  received 374 bytes  103,104.00 bytes/sec
+total size is 49,862  speedup is 0.97
+sending incremental file list
+deleting text/1.c
+text/
+
+sent 537 bytes  received 32 bytes  1,138.00 bytes/sec
+total size is 49,345  speedup is 86.72
