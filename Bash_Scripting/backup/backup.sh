@@ -23,4 +23,4 @@ back_up_dir=another_back_up_files
 rsync_options="-avb --backup-dir=$back_up_dir/$current_date --delete" #folder do not same name as directory
 
 # Thực hiện lệnh rsync và ghi log
-rsync $rsync_options "$1" "$2" >> "backup_$current_date.log" 2>&1
+$(which rsync) $rsync_options "$1" "$2" >> "backup_$current_date.log" 2>&1
