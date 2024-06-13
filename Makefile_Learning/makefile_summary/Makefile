@@ -1,6 +1,8 @@
 CC := gcc
 .PRECIOUS: $(OBJ_DIR)/%.o
 
+.PHONY: clean all
+
 EXTRA_CFLAGS := -Wall
 CUR_DIR := $(shell pwd)
 SRC_DIR := $(CUR_DIR)/src
@@ -32,8 +34,11 @@ all: $(BIN_FILES)
 $(OBJ_DIR)/%.o: %.c $(INC_FILES)
 	$(CC) -I $(LIB_DIR) -c $< -o $@
 
-.PHONY: clean
 
 clean:
-	rm -rf $(OBJ_DIR)/* \
-	$(BIN_DIR)/*
+	@if [ -n "$$(find $(OBJ_DIR) -name '*.o' -print -quit)" ]; then \
+		rm -rf $(OBJ_DIR)/* $(BIN_DIR)/*; \
+		echo "Cleaned up object and executable files."; \
+	else \
+		echo "No object files found to clean."; \
+	fi

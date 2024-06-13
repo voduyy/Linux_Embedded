@@ -12,7 +12,7 @@ struct gpio_desc *gpiod;
 static const struct of_device_id gpio_id[] =
     {
         {
-            .compatible = "gpio_base_subsystem",
+            .compatible = "gpio_based_subsystem",
         },
         {
             /*sentinal*/
@@ -27,10 +27,9 @@ static int my_probe(struct platform_device *pdev)
 }
 static int my_remove(struct platform_device *pdev)
 {
-
     gpiod_set_value(gpiod, LOW);
     pr_info("%s - %d", __func__, __LINE__);
-    gpio_put(gpiod);
+    gpiod_put(gpiod);
     return 0;
 }
 static struct platform_driver my_drv = {

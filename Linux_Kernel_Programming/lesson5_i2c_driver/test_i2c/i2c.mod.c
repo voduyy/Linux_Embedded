@@ -25,16 +25,15 @@ MODULE_INFO(retpoline, "Y");
 static const struct modversion_info ____versions[]
 __used __section(__versions) = {
 	{ 0x8f281531, "module_layout" },
-	{ 0xdb56c538, "platform_driver_unregister" },
-	{ 0x7379b3fd, "__platform_driver_register" },
-	{ 0x911fa199, "gpiod_get" },
-	{ 0x8e37f02e, "gpiod_put" },
+	{ 0xd0bf0a9a, "i2c_del_driver" },
+	{ 0xe335b1c5, "i2c_register_driver" },
 	{ 0xc5850110, "printk" },
-	{ 0x4e8a994a, "gpiod_set_value" },
 	{ 0xb1ad28e0, "__gnu_mcount_nc" },
 };
 
 MODULE_INFO(depends, "");
 
+MODULE_ALIAS("of:N*T*Ci2c_driver");
+MODULE_ALIAS("of:N*T*Ci2c_driverC*");
 
-MODULE_INFO(srcversion, "7956BB6895B9EECEBC0CE75");
+MODULE_INFO(srcversion, "18DB08FFCA159420D7B7A59");
