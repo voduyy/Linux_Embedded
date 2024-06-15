@@ -3,7 +3,7 @@ TOOLCHAIN := /home/voduy/Workspace/beagleboneblack_version2/kernelbuildscripts/d
 
 
 EXTRA_CFLAGS = -Wall
-obj-m = i2c.o 
+obj-m = spi.o 
 
 all:
 	make ARCH=arm CROSS_COMPILE=$(TOOLCHAIN) -C $(BBB_KERNEL) M=$(shell pwd) modules

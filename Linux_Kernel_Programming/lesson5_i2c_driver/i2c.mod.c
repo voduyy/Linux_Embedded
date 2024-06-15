@@ -24,16 +24,15 @@ MODULE_INFO(retpoline, "Y");
 
 static const struct modversion_info ____versions[]
 __used __section(__versions) = {
-	{ 0x8f281531, "module_layout" },
-	{ 0xd0bf0a9a, "i2c_del_driver" },
-	{ 0xe335b1c5, "i2c_register_driver" },
+	{ 0x6fbd61d8, "module_layout" },
+	{ 0x82722f00, "i2c_del_driver" },
+	{ 0xecc29ccd, "i2c_register_driver" },
 	{ 0xf9a482f9, "msleep" },
-	{ 0x4e7af083, "kmem_cache_alloc_trace" },
-	{ 0x2beac39b, "kmalloc_caches" },
+	{ 0x996d032a, "kmem_cache_alloc_trace" },
+	{ 0x1f82d7eb, "kmalloc_caches" },
 	{ 0xc5850110, "printk" },
 	{ 0xdecd0b29, "__stack_chk_fail" },
-	{ 0xff43d9d3, "i2c_transfer_buffer_flags" },
-	{ 0x8f678b07, "__stack_chk_guard" },
+	{ 0xe097e670, "i2c_transfer_buffer_flags" },
 	{ 0xb1ad28e0, "__gnu_mcount_nc" },
 };
 
