@@ -1,0 +1,8 @@
+&i2c2{
+	status = "okay";
+	oled:ssd1306@30{
+		compatible = "i2c_driver";
+		reg= <0x30>;
+		status = "okay";
+	};
+};
