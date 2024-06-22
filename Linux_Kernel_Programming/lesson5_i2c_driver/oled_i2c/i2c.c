@@ -47,8 +47,8 @@ static void ssd1306_goto_next_line(struct ssd1306_i2c_module *module)
 }
 static void ssd1306_print_char(struct ssd1306_i2c_module *module, unsigned char data)
 {
-    uint8_t temp =0 ;
-    uint8_t data_byte=0;
+    uint8_t temp = 0;
+    uint8_t data_byte = 0;
     if ((SSD1306_MAX_SEG < module->cursor_position + module->font_size) || (data == '\n'))
     {
         ssd1306_goto_next_line(module);
@@ -71,7 +71,7 @@ static void ssd1306_print_string(struct ssd1306_i2c_module *module, unsigned cha
 {
     while (*data)
     {
-        ssd1306_print_char(module, (*data)++);
+        ssd1306_print_char(module, *data++);
     }
 }
 static void ssd1306_set_brightness(struct ssd1306_i2c_module *module, int brightness)
@@ -143,7 +143,7 @@ static int i2c_probe_new(struct i2c_client *client)
     pr_info("Hello, this is driver of OLED SSD1306 \n");
     pr_info("Address is %X\n", client->addr);
 
-    module = kmalloc(sizeof(module), GFP_KERNEL);
+    module = kmalloc(sizeof(*module), GFP_KERNEL); // day phai la *module hoac struct ssd1306_i2c_module
     if (!module)
     {
         pr_info("Can't allocate memory \n");
@@ -164,7 +164,7 @@ static int i2c_remove(struct i2c_client *client)
 {
     module = i2c_get_clientdata(client);
     ssd1306_print_string(module, "End!!!");
-    msleep(1000);
+    msleep(2000);
 
     module->line_num = 0;
     module->cursor_position = 0;
@@ -186,8 +186,3 @@ static struct i2c_driver my_i2c_driver =
 };
 
 module_i2c_driver(my_i2c_driver);
-
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR(DRIVER_AUTHOR);
-MODULE_DESCRIPTION(DRIVER_DESC);
-MODULE_VERSION(DRIVER_VERS);

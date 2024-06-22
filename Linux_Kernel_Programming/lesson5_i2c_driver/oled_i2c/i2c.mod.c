@@ -27,13 +27,18 @@ __used __section(__versions) = {
 	{ 0x6fbd61d8, "module_layout" },
 	{ 0x82722f00, "i2c_del_driver" },
 	{ 0xecc29ccd, "i2c_register_driver" },
+	{ 0x37a0cba, "kfree" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0x996d032a, "kmem_cache_alloc_trace" },
+	{ 0x1f82d7eb, "kmalloc_caches" },
 	{ 0xc5850110, "printk" },
+	{ 0xe097e670, "i2c_transfer_buffer_flags" },
 	{ 0xb1ad28e0, "__gnu_mcount_nc" },
 };
 
 MODULE_INFO(depends, "");
 
-MODULE_ALIAS("of:N*T*Ci2c_driver");
-MODULE_ALIAS("of:N*T*Ci2c_driverC*");
+MODULE_ALIAS("of:N*T*Ci2c_driver_oled");
+MODULE_ALIAS("of:N*T*Ci2c_driver_oledC*");
 
-MODULE_INFO(srcversion, "18DB08FFCA159420D7B7A59");
+MODULE_INFO(srcversion, "22185A1C7527828CD0A28EF");

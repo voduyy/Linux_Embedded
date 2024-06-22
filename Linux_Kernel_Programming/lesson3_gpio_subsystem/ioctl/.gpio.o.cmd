@@ -1,8 +1,8 @@
-cmd_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.o := /home/voduy/Workspace/beagleboneblack_version2/kernelbuildscripts/dl/gcc-8.5.0-nolibc/arm-linux-gnueabi/bin/arm-linux-gnueabi-gcc -Wp,-MD,/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/.i2c.o.d  -nostdinc -isystem /home/voduy/Workspace/beagleboneblack_version2/kernelbuildscripts/dl/gcc-8.5.0-nolibc/arm-linux-gnueabi/bin/../lib/gcc/arm-linux-gnueabi/8.5.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -fno-ipa-sra -msoft-float -mabi=aapcs-linux -mfpu=vfp -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -fplugin=./scripts/gcc-plugins/arm_ssp_per_task_plugin.so -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -fplugin-arg-arm_ssp_per_task_plugin-tso=1 -fplugin-arg-arm_ssp_per_task_plugin-offset=24 -Wall  -DMODULE  -DKBUILD_BASENAME='"i2c"' -DKBUILD_MODNAME='"i2c"' -c -o /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.o /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.c
+cmd_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.o := /home/voduy/Workspace/beagleboneblack_version2/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -Wp,-MD,/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/.gpio.o.d  -nostdinc -isystem /home/voduy/Workspace/beagleboneblack_version2/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/6.5.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -fno-ipa-sra -msoft-float -mabi=aapcs-linux -mfpu=vfp -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-array-bounds -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wall  -DMODULE  -DKBUILD_BASENAME='"gpio"' -DKBUILD_MODNAME='"gpio"' -c -o /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.o /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.c
 
-source_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.o := /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.c
+source_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.o := /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.c
 
-deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.o := \
+deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.o := \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -71,7 +71,7 @@ deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_d
     $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/arch/has/refcount.h) \
     $(wildcard include/config/panic/timeout.h) \
-  /home/voduy/Workspace/beagleboneblack_version2/kernelbuildscripts/dl/gcc-8.5.0-nolibc/arm-linux-gnueabi/lib/gcc/arm-linux-gnueabi/8.5.0/include/stdarg.h \
+  /home/voduy/Workspace/beagleboneblack_version2/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.5.0/include/stdarg.h \
   include/linux/limits.h \
   include/uapi/linux/limits.h \
   include/linux/linkage.h \
@@ -527,67 +527,11 @@ deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_d
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
-  include/linux/of.h \
-    $(wildcard include/config/of/dynamic.h) \
-    $(wildcard include/config/sparc.h) \
-    $(wildcard include/config/of/promtree.h) \
-    $(wildcard include/config/of/kobj.h) \
-    $(wildcard include/config/of.h) \
-    $(wildcard include/config/of/numa.h) \
-    $(wildcard include/config/of/overlay.h) \
-  include/linux/mod_devicetable.h \
-  include/linux/uuid.h \
-  include/uapi/linux/uuid.h \
-  include/linux/property.h \
-  include/linux/fwnode.h \
-  include/linux/i2c.h \
-    $(wildcard include/config/i2c.h) \
-    $(wildcard include/config/i2c/slave.h) \
-    $(wildcard include/config/i2c/boardinfo.h) \
-    $(wildcard include/config/i2c/mux.h) \
-    $(wildcard include/config/acpi.h) \
-  include/linux/acpi.h \
-    $(wildcard include/config/acpi/debugger.h) \
-    $(wildcard include/config/x86.h) \
-    $(wildcard include/config/acpi/hotplug/cpu.h) \
-    $(wildcard include/config/acpi/hotplug/ioapic.h) \
-    $(wildcard include/config/x86/io/apic.h) \
-    $(wildcard include/config/pci.h) \
-    $(wildcard include/config/acpi/wmi.h) \
-    $(wildcard include/config/acpi/numa.h) \
-    $(wildcard include/config/hibernation.h) \
-    $(wildcard include/config/acpi/hotplug/memory.h) \
-    $(wildcard include/config/acpi/container.h) \
-    $(wildcard include/config/acpi/gtdt.h) \
-    $(wildcard include/config/pm.h) \
-    $(wildcard include/config/gpiolib.h) \
-    $(wildcard include/config/acpi/table/upgrade.h) \
-    $(wildcard include/config/acpi/watchdog.h) \
-    $(wildcard include/config/acpi/spcr/table.h) \
-    $(wildcard include/config/acpi/generic/gsi.h) \
-    $(wildcard include/config/acpi/lpit.h) \
-    $(wildcard include/config/acpi/pptt.h) \
-  include/linux/ioport.h \
-    $(wildcard include/config/io/strict/devmem.h) \
-  include/linux/irqdomain.h \
-    $(wildcard include/config/irq/domain/hierarchy.h) \
-    $(wildcard include/config/generic/irq/debugfs.h) \
-    $(wildcard include/config/irq/domain.h) \
-  include/linux/irqhandler.h \
-  include/linux/resource_ext.h \
-  include/linux/slab.h \
-    $(wildcard include/config/debug/slab.h) \
-    $(wildcard include/config/failslab.h) \
-    $(wildcard include/config/memcg/kmem.h) \
-    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
-    $(wildcard include/config/slab.h) \
-    $(wildcard include/config/slub.h) \
-    $(wildcard include/config/slob.h) \
-  include/linux/overflow.h \
-  include/linux/percpu-refcount.h \
-  include/linux/kasan.h \
-    $(wildcard include/config/kasan/generic.h) \
+  include/linux/cdev.h \
+  include/linux/kdev_t.h \
+  include/uapi/linux/kdev_t.h \
   include/linux/device.h \
+    $(wildcard include/config/acpi.h) \
     $(wildcard include/config/debug/devres.h) \
     $(wildcard include/config/generic/msi/irq/domain.h) \
     $(wildcard include/config/pinctrl.h) \
@@ -597,11 +541,15 @@ deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_d
     $(wildcard include/config/arch/has/sync/dma/for/device.h) \
     $(wildcard include/config/arch/has/sync/dma/for/cpu.h) \
     $(wildcard include/config/arch/has/sync/dma/for/cpu/all.h) \
+    $(wildcard include/config/of.h) \
     $(wildcard include/config/devtmpfs.h) \
     $(wildcard include/config/sysfs/deprecated.h) \
+  include/linux/ioport.h \
+    $(wildcard include/config/io/strict/devmem.h) \
   include/linux/klist.h \
   include/linux/pm.h \
     $(wildcard include/config/vt/console/sleep.h) \
+    $(wildcard include/config/pm.h) \
     $(wildcard include/config/pm/clk.h) \
     $(wildcard include/config/pm/generic/domains.h) \
   include/linux/hrtimer.h \
@@ -716,39 +664,188 @@ deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_d
     $(wildcard include/config/posix/timers.h) \
   include/linux/alarmtimer.h \
   include/uapi/linux/rseq.h \
+  include/linux/overflow.h \
   arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
     $(wildcard include/config/iommu/api.h) \
     $(wildcard include/config/arm/dma/use/iommu.h) \
     $(wildcard include/config/arch/omap.h) \
   include/linux/pm_wakeup.h \
-  include/acpi/acpi.h \
-  include/acpi/platform/acenv.h \
-  include/acpi/platform/acgcc.h \
-  include/acpi/platform/aclinux.h \
-    $(wildcard include/config/acpi/reduced/hardware/only.h) \
-    $(wildcard include/config/acpi/debug.h) \
-  include/linux/ctype.h \
-  include/acpi/acnames.h \
-  include/acpi/actypes.h \
-  include/acpi/acexcep.h \
-  include/acpi/actbl.h \
-  include/acpi/actbl1.h \
-  include/acpi/actbl2.h \
-  include/acpi/actbl3.h \
-  include/acpi/acrestyp.h \
-  include/acpi/platform/acenvex.h \
-  include/acpi/platform/aclinuxex.h \
-  include/acpi/platform/acgccex.h \
-  include/acpi/acoutput.h \
-  include/acpi/acpiosxf.h \
-  include/acpi/acpixf.h \
-  include/acpi/acconfig.h \
-  include/acpi/acbuffer.h \
-  include/linux/rtmutex.h \
-    $(wildcard include/config/debug/rt/mutexes.h) \
-  include/uapi/linux/i2c.h \
+  include/linux/fs.h \
+    $(wildcard include/config/read/only/thp/for/fs.h) \
+    $(wildcard include/config/fs/posix/acl.h) \
+    $(wildcard include/config/cgroup/writeback.h) \
+    $(wildcard include/config/ima.h) \
+    $(wildcard include/config/file/locking.h) \
+    $(wildcard include/config/fsnotify.h) \
+    $(wildcard include/config/fs/encryption.h) \
+    $(wildcard include/config/fs/verity.h) \
+    $(wildcard include/config/epoll.h) \
+    $(wildcard include/config/quota.h) \
+    $(wildcard include/config/fs/dax.h) \
+    $(wildcard include/config/mandatory/file/locking.h) \
+    $(wildcard include/config/migration.h) \
+    $(wildcard include/config/io/uring.h) \
+  include/linux/wait_bit.h \
+  include/linux/dcache.h \
+  include/linux/rculist_bl.h \
+  include/linux/list_bl.h \
+  include/linux/bit_spinlock.h \
+  include/linux/lockref.h \
+    $(wildcard include/config/arch/use/cmpxchg/lockref.h) \
+  include/linux/stringhash.h \
+    $(wildcard include/config/dcache/word/access.h) \
+  include/linux/hash.h \
+    $(wildcard include/config/have/arch/hash.h) \
+  include/linux/path.h \
+  include/linux/list_lru.h \
+    $(wildcard include/config/memcg/kmem.h) \
+  include/linux/shrinker.h \
+  include/linux/capability.h \
+  include/uapi/linux/capability.h \
+  include/linux/semaphore.h \
+  include/linux/fcntl.h \
+    $(wildcard include/config/arch/32bit/off/t.h) \
+  include/uapi/linux/fcntl.h \
+  arch/arm/include/uapi/asm/fcntl.h \
+  include/uapi/asm-generic/fcntl.h \
+  include/uapi/linux/fiemap.h \
+  include/linux/migrate_mode.h \
+  include/linux/percpu-rwsem.h \
+  include/linux/rcuwait.h \
+  include/linux/rcu_sync.h \
+  include/linux/delayed_call.h \
+  include/linux/uuid.h \
+  include/uapi/linux/uuid.h \
+  include/linux/errseq.h \
+  include/linux/ioprio.h \
+  include/linux/sched/rt.h \
+  include/linux/iocontext.h \
+  include/linux/fs_types.h \
+  include/uapi/linux/fs.h \
+  include/uapi/linux/ioctl.h \
+  arch/arm/include/generated/uapi/asm/ioctl.h \
+  include/asm-generic/ioctl.h \
+  include/uapi/asm-generic/ioctl.h \
+  include/linux/quota.h \
+    $(wildcard include/config/quota/netlink/interface.h) \
+  include/linux/percpu_counter.h \
+  include/uapi/linux/dqblk_xfs.h \
+  include/linux/dqblk_v1.h \
+  include/linux/dqblk_v2.h \
+  include/linux/dqblk_qtree.h \
+  include/linux/projid.h \
+  include/uapi/linux/quota.h \
+  include/linux/nfs_fs_i.h \
+  include/linux/uaccess.h \
+  arch/arm/include/asm/uaccess.h \
+    $(wildcard include/config/cpu/sw/domain/pan.h) \
+    $(wildcard include/config/cpu/use/domains.h) \
+    $(wildcard include/config/uaccess/with/memcpy.h) \
+  arch/arm/include/asm/domain.h \
+    $(wildcard include/config/io/36.h) \
+    $(wildcard include/config/cpu/cp15/mmu.h) \
+  arch/arm/include/generated/asm/extable.h \
+  include/asm-generic/extable.h \
+  include/linux/slab.h \
+    $(wildcard include/config/debug/slab.h) \
+    $(wildcard include/config/failslab.h) \
+    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
+    $(wildcard include/config/slab.h) \
+    $(wildcard include/config/slub.h) \
+    $(wildcard include/config/slob.h) \
+  include/linux/percpu-refcount.h \
+  include/linux/kasan.h \
+    $(wildcard include/config/kasan/generic.h) \
+  include/linux/gpio.h \
+    $(wildcard include/config/gpiolib.h) \
+    $(wildcard include/config/arch/have/custom/gpio/h.h) \
+  arch/arm/include/asm/gpio.h \
+    $(wildcard include/config/arch/nr/gpio.h) \
+  include/asm-generic/gpio.h \
+  include/linux/of.h \
+    $(wildcard include/config/of/dynamic.h) \
+    $(wildcard include/config/sparc.h) \
+    $(wildcard include/config/of/promtree.h) \
+    $(wildcard include/config/of/kobj.h) \
+    $(wildcard include/config/of/numa.h) \
+    $(wildcard include/config/of/overlay.h) \
+  include/linux/mod_devicetable.h \
+  include/linux/property.h \
+  include/linux/fwnode.h \
+  include/linux/gpio/driver.h \
+    $(wildcard include/config/irq/domain/hierarchy.h) \
+    $(wildcard include/config/gpio/generic.h) \
+    $(wildcard include/config/gpiolib/irqchip.h) \
+    $(wildcard include/config/of/gpio.h) \
+  include/linux/irq.h \
+    $(wildcard include/config/generic/irq/effective/aff/mask.h) \
+    $(wildcard include/config/generic/irq/ipi.h) \
+    $(wildcard include/config/generic/irq/migration.h) \
+    $(wildcard include/config/generic/pending/irq.h) \
+    $(wildcard include/config/hardirqs/sw/resend.h) \
+    $(wildcard include/config/generic/irq/legacy/alloc/hwirq.h) \
+    $(wildcard include/config/generic/irq/legacy.h) \
+    $(wildcard include/config/generic/irq/multi/handler.h) \
+  include/linux/irqhandler.h \
+  include/linux/irqreturn.h \
+  include/linux/irqnr.h \
+  include/uapi/linux/irqnr.h \
+  include/linux/io.h \
+    $(wildcard include/config/have/arch/huge/vmap.h) \
+    $(wildcard include/config/has/ioport/map.h) \
+    $(wildcard include/config/pci.h) \
+  arch/arm/include/asm/io.h \
+    $(wildcard include/config/need/mach/io/h.h) \
+    $(wildcard include/config/pcmcia/soc/common.h) \
+    $(wildcard include/config/isa.h) \
+    $(wildcard include/config/pccard.h) \
+  include/asm-generic/pci_iomap.h \
+    $(wildcard include/config/no/generic/pci/ioport/map.h) \
+    $(wildcard include/config/generic/pci/iomap.h) \
+  include/asm-generic/io.h \
+    $(wildcard include/config/generic/iomap.h) \
+    $(wildcard include/config/virt/to/bus.h) \
+  include/linux/logic_pio.h \
+    $(wildcard include/config/indirect/pio.h) \
+  include/linux/vmalloc.h \
+  arch/arm/include/asm/irq.h \
+    $(wildcard include/config/sparse/irq.h) \
+  arch/arm/include/generated/asm/irq_regs.h \
+  include/asm-generic/irq_regs.h \
+  include/linux/irqdesc.h \
+    $(wildcard include/config/irq/preflow/fasteoi.h) \
+    $(wildcard include/config/proc/fs.h) \
+    $(wildcard include/config/generic/irq/debugfs.h) \
+    $(wildcard include/config/handle/domain/irq.h) \
+    $(wildcard include/config/irq/domain.h) \
+  arch/arm/include/asm/hw_irq.h \
+  include/linux/irqchip/chained_irq.h \
+  include/linux/irqdomain.h \
+  include/linux/pinctrl/pinctrl.h \
+    $(wildcard include/config/generic/pinconf.h) \
+  include/linux/seq_file.h \
+  include/linux/cred.h \
+    $(wildcard include/config/debug/credentials.h) \
+  include/linux/key.h \
+    $(wildcard include/config/net.h) \
+  include/linux/assoc_array.h \
+    $(wildcard include/config/associative/array.h) \
+  include/linux/sched/user.h \
+    $(wildcard include/config/fanotify.h) \
+    $(wildcard include/config/posix/mqueue.h) \
+    $(wildcard include/config/bpf/syscall.h) \
+  include/linux/pinctrl/pinctrl-state.h \
+  include/linux/pinctrl/devinfo.h \
+  include/linux/pinctrl/consumer.h \
+  include/linux/pinctrl/pinconf-generic.h \
+  include/linux/pinctrl/machine.h \
+  include/linux/gpio/consumer.h \
+    $(wildcard include/config/gpio/sysfs.h) \
+  include/linux/platform_device.h \
+    $(wildcard include/config/suspend.h) \
+    $(wildcard include/config/hibernate/callbacks.h) \
 
-/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.o: $(deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.o)
+/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.o: $(deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.o)
 
-$(deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson5_i2c_driver/test_i2c/i2c.o):
+$(deps_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson3_gpio_subsystem/ioctl/gpio.o):

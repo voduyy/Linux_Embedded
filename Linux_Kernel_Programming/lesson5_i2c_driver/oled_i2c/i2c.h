@@ -14,9 +14,13 @@
 #define MIN_BRIGHTNESS 0
 
 #define DRIVER_AUTHOR "voduy"
-#define DRIVER_DESC "i2c oled"
+#define DRIVER_DESC "i2c_oled"
 #define DRIVER_VERS "1.0"
-struct ssd1306_i2c_module *module;
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR(DRIVER_AUTHOR);
+MODULE_DESCRIPTION(DRIVER_DESC);
+MODULE_VERSION(DRIVER_VERS);
 struct ssd1306_i2c_module
 {
     struct i2c_client *client;
@@ -25,6 +29,7 @@ struct ssd1306_i2c_module
     uint8_t font_size;
 };
 
+struct ssd1306_i2c_module *module;
 static const unsigned char ssd1306_font[][SSD1306_DEF_FONT_SIZE] = {
     {0x00, 0x00, 0x00, 0x00, 0x00}, // space
     {0x00, 0x00, 0x2f, 0x00, 0x00}, // !
