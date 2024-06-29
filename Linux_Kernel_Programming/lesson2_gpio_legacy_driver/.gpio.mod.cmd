@@ -1,1 +1,0 @@
-cmd_/home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson2_gpio_legacy_driver/gpio.mod := { echo  /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson2_gpio_legacy_driver/gpio.o;  echo; } > /home/voduy/Workspace/Linux_Embedded/Linux_Kernel_Programming/lesson2_gpio_legacy_driver/gpio.mod

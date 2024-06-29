@@ -1,1 +1,0 @@
-cmd_/home/voduy/Workspace/Linux_Kernel_Programming/lesson1_character_device_driver/02_major_minor/major_minor.mod := { echo  /home/voduy/Workspace/Linux_Kernel_Programming/lesson1_character_device_driver/02_major_minor/major_minor.o;  echo; } > /home/voduy/Workspace/Linux_Kernel_Programming/lesson1_character_device_driver/02_major_minor/major_minor.mod
