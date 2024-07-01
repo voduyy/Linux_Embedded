@@ -17,8 +17,8 @@
 #define DRIVER_DESCRIPTION "GPIO IOCTL"
 #define DRIVER_VERSION "1.0"
 
-#define LED_ON _IOW('a', '1', int32_t *)
-#define LED_OFF _IOW('a', '0', int32_t *)
+#define LED_ON _IOR('a', '1', int32_t *)
+#define LED_OFF _IOR('a', '0', int32_t *)
 
 #define HIGH 1
 #define LOW 0
