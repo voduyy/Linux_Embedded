@@ -21,7 +21,7 @@ static int m_open(struct inode *inode, struct file *file);
 static int m_release(struct inode *inode, struct file *file);
 const char *pwm_specs;
 struct device_node *np;
-int pwm_period;
+unsigned long pwm_period;
 struct my_dev
 {
     dev_t dev_num;
@@ -65,7 +65,6 @@ static ssize_t m_write(struct file *filp, const char __user *user_buf, size_t si
         pr_err("can't convert\n");
         return -1;
     }
-    kstrtol(dynamic_ptr, 10, (long *)&period_value);
     pwm_config(pwm_dev, period_value / 2, period_value);
     return 1;
 }
@@ -121,7 +120,7 @@ static int my_pwm_probe(struct platform_device *pdev)
         goto rm_class;
     }
     my_device_pwm = &pdev->dev;
-    pwm_dev = pwm_get(my_device_pwm, "my_pwm");
+    pwm_dev = pwm_get(my_device_pwm, "my_sec_pwm");
     if (IS_ERR(pwm_dev))
     {
         pr_info("Can't get device \n");
@@ -133,13 +132,13 @@ static int my_pwm_probe(struct platform_device *pdev)
         return -1;
     }
 
-    if (sscanf(pwm_specs, "<ehrpwm1_pins 1 %d", &pwm_period) != 1)
+    if (sscanf(pwm_specs, "<ehrpwm1_pins 0 %ld", &pwm_period) != 1)
     {
         printk("Failed to parse pwm_period from pwm_specs: %s\n", pwm_specs);
         return -1;
     }
 
-    printk("pwm_period: %d\n", pwm_period);
+    printk("pwm_period: %ld\n", pwm_period);
 
     if (pwm_config(pwm_dev, pwm_period / 2, pwm_period) != 0)
     {

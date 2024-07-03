@@ -1,0 +1,19 @@
+&am33xx_pinmux{
+
+	ehrpwm2_pins: ehrpwn2_pins{
+		pinctrl-single,pins = <
+			AM33XX_PADCONF(0x824, PIN_OUTPUT , MUX_MODE6)
+			AM33XX_PADCONF(0x820, PIN_OUTPUT , MUX_MODE6)
+		>;
+	};
+};
+/{
+	bar_pins:bar_pins{
+		compatible = "my_pwm_driver";
+		pinctrl-names = "default";
+		pinctrl-0 = <&ehrpwm2_pins>;
+		pwms = <&ehrpwm2 0 5000000>;
+		pwm-names = "my_sec_pwm";
+		status = "okay";
+	};
+};
