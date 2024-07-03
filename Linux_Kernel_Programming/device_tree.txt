@@ -1,3 +1,4 @@
+
 &i2c2{
 	status = "okay";
 	oled:ssd1306@3c{
@@ -7,17 +8,6 @@
 	};
 };
 
-
-&spi0 {
-	status = "okay";
-	lcd_nokia:nokia5110@0{
-		compatible = "nokia,lcd-spi";
-		spi-max-frequency = <10000000>;
-		reg = <0>;
-	};
-};
-
-
 /{
 	mpgio {
 		compatible = "gpio_based_subsystem";
@@ -25,21 +15,31 @@
 		status = "okay";
 	};
 };
+&epwmss1 {
+	status = "okay";
+};
+&ehrpwm1 {
+	#pwm-cells= <2>;
+	status = "okay";
+};
+
+&epwmss2 {
+	status = "okay";
+};
+&ehrpwm2 {
+	#pwm-cells= <2>;
+	status = "okay";
+};
+&uart1{
+	status = "okay";
+};
 
 // pin controller 
 &am33xx_pinmux {
 	ehrpwm1_pins: ehrpwm1_pins{
-		#pwm_cells =<2>;
 		pinctrl-single,pins = <
-			AM33XX_IOPAD(0x848, PIN_OUTPUT | MUX_MODE6)
-			AM33XX_IOPAD(0x84c, PIN_OUTPUT | MUX_MODE6)
-		>;
-	};
-	ehrpwm2_pins: ehrpwn2_pins{
-		#pwm_cells =<2>;
-		pinctrl-single,pins = <
-			AM33XX_IOPAD(0x824, PIN_OUTPUT | MUX_MODE6)
-			AM33XX_IOPAD(0x820, PIN_OUTPUT | MUX_MODE6)
+			AM33XX_PADCONF(0x848, PIN_OUTPUT , MUX_MODE6)
+			AM33XX_PADCONF(0x84c, PIN_OUTPUT , MUX_MODE6)
 		>;
 	};
 	my_gpio_sleep: my_gpio_sleep{
@@ -48,59 +48,62 @@
 		AM33XX_IOPAD(0x84c,PIN_OUTPUT | MUX_MODE7)
 		>;
 	};
+
+	ehrpwm2_pins: ehrpwn2_pins{
+		pinctrl-single,pins = <
+			AM33XX_PADCONF(0x824, PIN_OUTPUT , MUX_MODE6)
+			AM33XX_PADCONF(0x820, PIN_OUTPUT , MUX_MODE6)
+		>;
+	};
+	
 	my_uart_pins: my_uart_pins{
 		pinctrl-single,pins = < 
-		AM33XX_IOPAD(0x984,PIN_INPUT_PULLUP | MUX_MODE0)
-		AM33XX_IOPAD(0x980,PIN_OUTPUT_PULLDOWN | MUX_MODE0)
+		AM33XX_IOPAD(0x984,PIN_INPUT_PULLUP|MUX_MODE0)
+		AM33XX_IOPAD(0x980,PIN_OUTPUT_PULLDOWN|MUX_MODE0)
 		>;
 	};
 	my_spi_pins: my_spi_pins{
 		pinctrl-single,pins =<
-		AM33XX_IOPAD(0x984,PIN_INPUT_PULLUP | MUX_MODE0)
-		AM33XX_IOPAD(0x980,PIN_OUTPUT_PULLDOWN | MUX_MODE0)
+		AM33XX_IOPAD(0x958,PIN_INPUT_PULLUP| MUX_MODE0)		/*data in */
+		AM33XX_IOPAD(0x95c,PIN_OUTPUT_PULLDOWN | MUX_MODE0) /*chip select*/
+		AM33XX_IOPAD(0x954,PIN_INPUT_PULLUP | MUX_MODE0)	/*data in */
+		AM33XX_IOPAD(0x950,PIN_OUTPUT_PULLDOWN | MUX_MODE0) /*SCLK */
 		>;
 	};
 };
 // client device
-&epwmss1 {
-	status = "okay";
-};
-&ehrpwm1 {
-	status = "okay";
-};
-
-&epwmss2 {
-	status = "okay";
-};
-&ehrpwm2 {
-	status = "okay";
-};
-&uart1{
-	status = "okay";
-};
 
 /{
 	bar_pins:bar_pins{
 		compatible = "my_pwm_driver";
-		#pwm_cells =<2>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&ehrpwm2_pins>;
-		pwms = <&ehrpwm2_pins 0 5000000>;
-		pwm-names = "my_pwm";
+		pwms = <&ehrpwm2 0 5000000>;
+		pwm-names = "my_sec_pwm";
 		status = "okay";
 	};
 };
 /{
 	foo_pins: foo_pins{
-		compatible = "pwm-gpio-pins";
-		#pwm_cells =<2>;
+		compatible = "pwm-gpio-pins";		
 		pinctrl-names = "default", "sleep";
 		pinctrl-0 = <&ehrpwm1_pins>;
 		pinctrl-1 = <&my_gpio_sleep>;
 		led40-gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
-		pwms = <&ehrpwm1_pins 1 5000000>;
+		pwms = <&ehrpwm1 1 5000000>;
 		pwm-names = "my_pwm";
 		status = "okay";
+	};
+};
+
+&spi0 {
+	status = "okay";
+	lcd_nokia:nokia5110@0{
+		compatible = "nokia,lcd-spi";
+		spi-max-frequency = <10000000>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&my_spi_pins>;
+		reg = <0>;
 	};
 };
 
