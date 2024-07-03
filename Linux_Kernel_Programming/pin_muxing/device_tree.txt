@@ -1,21 +1,29 @@
 // pin controller 
+
 &am33xx_pinmux {
 	ehrpwm1_pins: ehrpwm1_pins{
 		pinctrl-single,pins = <
-			AM33XX_IOPAD(0x848, PIN_OUTPUT | MUX_MODE6)
-			AM33XX_IOPAD(0x84c, PIN_OUTPUT | MUX_MODE6)
+			AM33XX_PADCONF(0x848, PIN_OUTPUT , MUX_MODE6)
+			AM33XX_PADCONF(0x84c, PIN_OUTPUT , MUX_MODE6)
+		>;
+	};
+	my_gpio_sleep: my_gpio_sleep{
+		pinctrl-single,pins = < 
+		AM33XX_IOPAD(0x848,PIN_OUTPUT | MUX_MODE7)
+		AM33XX_IOPAD(0x84c,PIN_OUTPUT | MUX_MODE7)
 		>;
 	};
 };
 
-// client device
-&epwmss1 {
-	status = "okay";
-};
-
-
-&ehrpwm1 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&ehrpwm1_pins>;
-	status = "okay";
+/{
+	foo_pins: foo_pins{
+		compatible = "pwm-gpio-pins";		
+		pinctrl-names = "default", "sleep";
+		pinctrl-0 = <&ehrpwm1_pins>;
+		pinctrl-1 = <&my_gpio_sleep>;
+		led40-gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
+		pwms = <&ehrpwm1 1 5000000>;
+		pwm-names = "my_pwm";
+		status = "okay";
+	};
 };
