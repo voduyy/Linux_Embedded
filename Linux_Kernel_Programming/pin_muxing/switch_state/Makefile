@@ -3,7 +3,7 @@ BBB_KERNEL := /home/voduy/Workspace/beagleboneblack_version2/kernelbuildscripts/
 TOOLCHAIN := /home/voduy/Workspace/beagleboneblack_version2/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 # Compiler flags
-EXTRA_CFLAGS = -Wall
+EXTRA_CFLAGS = -Wall -fno-stack-protector
 
 # Kernel modules to build
 obj-m += pwm_gpio.o 

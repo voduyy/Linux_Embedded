@@ -44,9 +44,9 @@ enum
     CDEV_NO_USE = 0,
     CDEV_BEING_USED = 1
 };
-const char *pwm_spec;
+struct of_phandle_args pwm_specs;
 struct device_node *np;
-unsigned int pwm_period;
+unsigned long pwm_period;
 struct device *my_device;
 struct gpio_desc *m_gpio;
 struct pinctrl *my_pinctrl;
@@ -88,12 +88,19 @@ static long m_unlockioctl(struct file *filp, unsigned int command, unsigned long
     {
     case PWM_STATE:
         my_pinctrl = pinctrl_get_select(my_device, "default");
-        pwm_config(mpwm, 1 / 2 * pwm_period, pwm_period);
+
+        if (of_parse_phandle_with_args(np, "pwms", NULL, 0, &pwm_specs))
+        {
+            pr_err("Fail to parse properties\n");
+        }
+        pwm_period = pwm_specs.args[2];
+        pwm_config(mpwm, pwm_period / 2, pwm_period);
         pwm_enable(mpwm);
         pr_info("Command PWM being called \n");
         break;
     case GPIO_STATE:
         my_pinctrl = pinctrl_get_select(my_device, "sleep");
+        pwm_disable(mpwm);
         gpiod_set_value(m_gpio, LOW);
         pr_info("Command GPIO being called \n");
         break;
@@ -138,16 +145,9 @@ static int m_gpio_probe(struct platform_device *pdev)
         goto rm_class;
     }
     my_device = &pdev->dev;
-    m_gpio = gpiod_get(my_device, "led40", GPIOD_OUT_LOW);
     mpwm = pwm_get(my_device, "my_pwm");
     np = my_device->of_node;
-
-    if (of_property_read_string(np, "m_pwm", &pwm_spec))
-    {
-        pr_info("Read properties fail\n");
-        return 1;
-    }
-    sscanf(pwm_spec, "<&ehrpwm1 0 %u>", &pwm_period);
+    m_gpio = gpiod_get(my_device, "led40", GPIOD_OUT_LOW);
     pr_info("Create successfully\n");
     return 0;
 rm_class:
